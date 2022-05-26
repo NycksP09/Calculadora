@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Scss</title>
+  </head>
+ <body>
+   <article class='container calculator'>
+      <div class='calculator__display'>
+        <input type="text" class='calculator__display-input' value="" />
+        <div class='calculator__display-result'></div>
+      </div>
+      <div class='calculator__callback'>
+        <img src='./assets/callback.png' />
+      </div>
+      <div class='buttons'>
+        <div class='calculator__button-wrapper'>
+          <button class='calculator__buttons--button calculator__buttons--button-background-red calculator__buttons--operator clean'>C</button>
+          <button class='calculator__buttons--button calculator__buttons--button-color-green calculator__buttons--operator'>()</button>
+          <button class='calculator__buttons--button calculator__buttons--button-color-green calculator__buttons--operator'>%</button>
+          <button class='calculator__buttons--button calculator__buttons--button-color-green calculator__buttons--operator'>÷</button>
+        </div>
+      </div>  
+      <div class='buttons'>
+        <div class='calculator__button-wrapper'>
+          <button class='calculator__buttons--button calculator__buttons--number'>7</button>
+          <button class='calculator__buttons--button calculator__buttons--number'>8</button>
+          <button class='calculator__buttons--button calculator__buttons--number'>9</button>
+          <button class='calculator__buttons--button calculator__buttons--button-color-green calculator__buttons--operator'>X</button>
+        </div>
+      </div>  
+      <div class='buttons'>
+        <div class='calculator__button-wrapper'>
+          <button class='calculator__buttons--button calculator__buttons--number'>4</button>
+          <button class='calculator__buttons--button calculator__buttons--number'>5</button>
+          <button class='calculator__buttons--button calculator__buttons--number'>6</button>
+          <button class='calculator__buttons--button calculator__buttons--button-color-green calculator__buttons--operator'>-</button>
+        </div>
+      </div>  
+      <div class='buttons'>
+        <div class='calculator__button-wrapper'>
+          <button class='calculator__buttons--button calculator__buttons--number'>1</button>
+          <button class='calculator__buttons--button calculator__buttons--number'>2</button>
+          <button class='calculator__buttons--button calculator__buttons--number'>3</button>
+          <button class='calculator__buttons--button calculator__buttons--button-color-green calculator__buttons--operator'>+</button>
+        </div>
+      </div>
+      <div class='buttons'>
+        <div class='calculator__button-wrapper'>
+          <button class='calculator__buttons--button calculator__buttons--operator'>+/-</button>
+          <button class='calculator__buttons--button calculator__buttons--number'>0</button>
+          <button class='calculator__buttons--button calculator__buttons--operator'>.</button>
+          <button class='calculator__buttons--button calculator__buttons--button-color-grey calculator__buttons--button-background-green calculator__buttons--result'>=</button>
+        </div>
+      </div>
+   </article>
+   <script src="js/index.js"></script>
+ </body>
+</html>

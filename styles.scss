@@ -1,0 +1,63 @@
+@import "./css/_reset.scss";
+
+
+.calculator {
+  width: 352px;
+  background: $black;
+
+  &__display {
+    width: 100%;
+  }
+  &__display-input {
+    background: transparent;
+    outline: transparent;
+    border: 0;
+    color: white;
+    
+    font-size: calculator-rem(46);
+    text-align: right;
+    width: 100%;
+    padding-right: 10px;
+  }
+  &__display-result {
+    color: $light-grey;
+    font-size: calculator-rem(46);
+    text-align: right;
+    width: 100%;
+    padding-right: 10px;
+  }
+  &__buttons {
+    &--button {
+      background: $grey;
+      color: $white;
+      width: 73px;
+      height: 75px;
+      border-radius: 9px;
+      font-size: calculator-rem(36);
+      border: 0;
+
+      &:hover {
+        background: lighten($grey, 30%);
+      }
+    }
+    &--button-background-red {
+      background: $red;
+    }
+    &--button-color-green {
+      color: $green;
+    }
+    &--button-color-grey {
+      color: $grey;
+    }
+    &--button-background-green {
+      background: $green;
+    }
+  }
+  &__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+ 
+}
